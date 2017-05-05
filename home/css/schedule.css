@@ -1,0 +1,24 @@
+body{
+	background: #fff;
+}
+.container{
+	margin-top: 50px;
+}
+.remind{
+	margin-top: 10em;
+	text-align: center;
+}
+.VivaTimeline dl dd .events .events-header{
+	background-color: #77c5fe;
+	color: #fff;
+}
+table{
+	border:1px solid #77c5fe !important;
+}
+.danger{
+	color: red;
+}
+.seeMore{
+	text-align: center;
+	margin: 20px auto;
+}

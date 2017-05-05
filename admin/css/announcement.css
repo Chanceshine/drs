@@ -1,0 +1,32 @@
+.publish{
+	margin: 80px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.publish h1{
+	text-align: center;
+}
+.publish label{
+	font-size: 18px;
+	text-align: center;
+}
+.publish textarea{
+	min-height: 100px;
+}
+.publish .btn{
+	margin-left: 85%;
+}
+.wordwrap{
+	display: block;
+	float: right;
+	margin: 5px;
+}
+.word{
+	color: red;
+}
+.alert{
+	text-align: center;
+	font-size: 18px;
+}

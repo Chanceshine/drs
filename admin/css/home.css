@@ -1,0 +1,132 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+	background-color: #eee;
+	min-width: 745px;
+	overflow: hidden;
+}
+i{
+	margin-right: 8px;
+}
+#header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	background-color: #03379d;/*#77c5fe*/
+	display: block;
+	box-shadow:inset 0 -2px 5px #fff;
+}
+#header .title{
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 28px;
+	text-shadow: 0 0 3px blue;
+	letter-spacing: 5px;
+	margin-left: 40px;
+}
+#header .user{
+	float: right;
+	margin-right: 10%;
+}
+#header .user .name{
+	float: left;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 18px;
+}
+#header .user a{
+	margin-left: 20px;
+	display: inline-block;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 18px;
+}
+.main-sidebar{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    /*width: 17.1%;*/
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    background-color: #10265f;
+}
+#box{
+	position: absolute;
+    top: 60px;
+    left: 230px;
+    height: 100%;
+    background: #eee;
+    padding-bottom: 80px;
+    overflow-y: scroll !important;
+}
+#box img{
+	width: 220px;
+	height: 220px;
+	margin:20px 20px 20px 10%;	
+	float: left;
+}
+#box .welcome{
+	width: 100%;
+}
+#box .right{
+	float: left;
+	margin-top: 130px;
+	width: 60%;
+}
+#box .right p{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #666;
+}
+#box .bg{
+	background: url(../img/bg.jpg);
+	width: 80%;
+	height: 45px;
+	line-height: 45px;
+	margin-right: 10%;
+	margin-left: 10%;
+	border-radius: 5px;
+	font-size: 1.5em;
+	float: left;
+	color: yellow;
+	text-align: center;
+}
+.msg{
+	float: left;
+	margin-left: 10%;
+}
+.msg label{
+	font-size: 18px;
+	margin-left: 10px;
+}
+.msg .form-group{
+	margin-top: 10px;
+}
+.msg p{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px;
+	padding-bottom: 5px;
+}
+#user{
+	border: 0;
+	background: #eee;
+	cursor: default;
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+.revise{
+	margin-left: 10px;
+}
+.save{
+	display: none;
+}

@@ -1,0 +1,12 @@
+table{
+	table-layout:fixed;
+	background: #fff;
+}
+#reject {
+	margin:15px;
+}
+.reason{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}

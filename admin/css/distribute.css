@@ -1,0 +1,26 @@
+table{
+	table-layout:fixed;
+	background: #fff;
+	white-space:nowrap;
+}
+.functions{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#pagination-demo1{
+	display: table;
+	margin: 20px auto 10px auto;
+}
+#distribute{
+	margin:15px;
+}
+#out{
+	width: 150px;
+}
+.distribute{
+	font-weight: bold;
+}
+.distribute:hover{
+	text-decoration: none;
+}

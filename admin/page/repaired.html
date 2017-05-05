@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-table.css">
+	<link rel="stylesheet" type="text/css" href="../css/zeroModal.css">
+	<link rel="stylesheet" type="text/css" href="../css/rejectTable.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-zh-CN.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-export.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-toolbar.min.js"></script>
+	<script type="text/javascript" src="../js/tableExport.js"></script>
+	<script type="text/javascript" src="../js/zeroModal.min.js"></script>
+</head>
+<body>
+<section id="reject">
+	<div id="toolbar">
+		<button id="delMore" class="btn btn-danger" disabled>批量删除</button>            
+    </div>
+    <div id="out">
+    	<select class="form-control" style="width: 180px;">
+            <option value="">导出当前表</option>
+            <option value="all">导出全部</option>
+            <option value="selected">导出被选项</option>
+        </select>
+    </div>
+	<table	id="table"
+            data-toolbar="#toolbar"
+            data-toggle="table"
+            data-show-columns="true"
+            data-search="true"
+            data-advanced-search="true"
+	        data-id-table="advancedTable"
+            data-show-refresh="true"
+            data-show-toggle="true"
+            data-show-export="true"
+            data-detail-formatter="detailFormatter"
+            data-checkbox="true"
+            data-id-field="id"
+            data-undefined-text="暂无数据"
+            data-pagination="true"
+            data-height="500"
+            data-sort-stable="true"
+            data-pagination="true"
+            data-page-size="8"
+            data-select-item-name="checkbox"
+            data-checkbox-header="true"
+            data-url="../control/repaired.php">
+		<thead>
+			<tr>
+				<th data-field="state" data-checkbox="true"></th>
+				<th data-field="id" data-sortable="true" data-width="50px">ID</th>
+				<th data-field="nid" data-sortable="true" data-width="120px">维修单编号</th>
+				<th data-field="currentStatus" data-width="100px">当前状态</th>
+				<th data-field="uid" data-sortable="true" data-width="120px">用户ID</th>
+				<th data-field="regman" data-width="100px">报修人</th>
+				<th data-field="tel" data-width="180px">联系方式</th>
+				<th data-field="compus" data-sortable="true" data-width="100px">校区</th>
+				<th data-field="building" data-sortable="true" data-width="130px">楼栋</th>
+				<th data-field="room" data-sortable="true" data-width="100px">房间号</th>
+				<th data-field="equipment" data-width="120px">报修设备</th>
+				<th data-field="othertext" class="othertext" data-width="150px">报修情况补充</th>
+				<th data-field="time" class="othertext" data-sortable="true" data-width="150px">预约时间</th>
+				<th data-field="regtime" data-sortable="true" data-width="180px">登记时间</th>
+				<th data-field="updateTime" data-sortable="true" data-width="180px">完成时间</th>
+				<th data-field="operator" data-sortable="true" data-width="180px">确认人</th>
+			</tr>
+		</thead>
+	</table>
+</section>
+<script type="text/javascript" src="../js/repaired.js"></script>
+</body>
+</html>

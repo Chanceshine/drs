@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>宿舍报修系统后台管理</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="css/formValidation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/formValidation.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!--[if IE]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>宿舍报修系统 <span>后台管理系统</span></h1>
+		</header>
+		<div class="demo form-bg" style="padding: 20px 0;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-offset-3 col-md-6">
+	                    <form id="loginbox" class="form-horizontal" method="post" action="control/loginHandle.php" role="form">
+	                        <span class="heading">管理员登录</span>
+	                        <div class="form-group">
+	                            <input type="text" class="form-control word" id="user" name="admin" placeholder="用户名" required>
+	                            <i class="glyphicon glyphicon-user"></i>
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="password" class="form-control word" id="pwd" name="pwd" placeholder="密　码" required>
+	                            <i class="glyphicon glyphicon-lock"></i>
+	                        </div>
+	                        <div class="error"></div>
+	                        <div class="form-group">
+	                            <div class="main-checkbox">
+	                                <input type="checkbox" id="checkbox" checked="checked" name="check">
+	                                <label for="checkbox"><span class="text">记住我</span></label>
+	                            </div>
+	                            <button type="submit" name="btn" class="btn btn-default"><span class="word">登录</span></button>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+<script type="text/javascript">
+$(function () {
+	var strName = localStorage.getItem('admin');
+	var strPass = localStorage.getItem('pwd');
+	if(strName){
+		$('#user').val(strName);
+	}if(strPass){
+		$('#pwd').val(strPass);
+	}
+
+	$('#loginbox').formValidation({
+        message: 'This value is not valid',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            admin: {
+                validators: {
+                    notEmpty: {
+                        message: '用户名不能为空'
+                    },
+                    stringLength: {
+			    		max: 12,
+			    		message: '用户名长度不能超过12个字符'
+			    	},
+                }
+            },
+            pwd: {
+                validators: {
+                    notEmpty: {
+                        message: '密码不能为空'
+                    },
+                    stringLength: {
+                    	min:6,
+			    		max: 12,
+			    		message: '密码长度在6-12个字符之间'
+			    	},
+                }
+            },
+        }
+    }).on('success.form.fv', function(e) {
+        // Prevent form submission
+        e.preventDefault();
+        // Get the form instance
+        var $form = $(e.target);
+        // Get the FormValidation instance
+        var bv = $form.data('formValidation');
+        // Use Ajax to submit form data
+        $.post($form.attr('action'), $form.serialize(), function(result) {
+        	if(result==0){
+        		$('.error').html('您的用户名和密码不匹配');
+        	}else {
+        		var admin = $('#user').val();
+        		var pwd = $('#pwd').val();
+        		localStorage.setItem('admin',admin);
+        		if ($('#checkbox').prop('checked')) {
+    				localStorage.setItem('pwd',pwd);
+				}else{
+					localStorage.removeItem('pwd');
+				}
+        	}
+    		window.location.href='page/home.php';
+    	    console.log(result);
+        },'json');
+        $('#user').change(function () {
+        	$('.error').hide();
+        });
+        $('#pwd').change(function () {
+        	$('.error').hide();
+        });
+    });
+})
+	
+</script>
+</body>
+</html>

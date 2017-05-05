@@ -1,0 +1,15 @@
+table{
+	border-color: #77c5fe;
+}
+caption{
+	text-align: center;
+}
+.bg{
+	font-weight: bold;
+	color: #fff;
+	background: #77c5fe;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}

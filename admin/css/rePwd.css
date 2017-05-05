@@ -1,0 +1,12 @@
+body{
+	font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+	font-size: 18px;
+}
+form{
+	margin-top: 50px;
+	padding: 80px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow:5px 5px 5px #CCCCCC;
+}

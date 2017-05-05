@@ -1,0 +1,60 @@
+body{
+	background: #fff;
+}
+main{
+	margin:15px;
+}
+table{
+	table-layout:fixed;
+	background: #fff;
+}
+.option{
+	cursor: pointer;
+	display: inline-block;
+	margin: auto 2px;
+}
+.option:hover{
+	color: #f00;
+}
+.pubTitle{
+	text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.pubContent{
+	text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#out{
+	width: 150px;
+}
+#myModal .modal-title,#myModal .btn{
+	font-weight: bold;
+}
+#myModal .sure{
+	display: none;
+}
+#content_text{
+	height: 150px;
+}
+.modal-header{
+	padding: 10px;
+}
+.modal-header i{
+	color: blue;
+}
+.danger-body i{
+	color: red;
+}
+.danger-body{
+	margin: 10px;
+	padding: 10px 0;
+	min-height: 50px;
+	text-align: center;
+}
+.remove{
+	color: red;
+}

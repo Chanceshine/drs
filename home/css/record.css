@@ -1,0 +1,18 @@
+#box{
+	margin-top: 90px;
+	margin-bottom: 30px;
+}
+.tabs-vertical{
+	max-width: 95%;
+	margin: auto 20px;
+}
+table{
+	table-layout:fixed;
+	background: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+h1{
+	color: #444;
+}

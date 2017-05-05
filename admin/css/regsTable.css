@@ -1,0 +1,33 @@
+#regs{
+	margin:15px;
+	overflow-x: scroll;
+}
+table{
+	table-layout:fixed;
+	background: #fff;
+}
+.othertext{
+	text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#out{
+	width: 150px;
+}
+.pass{
+	font-weight: bold;
+}
+.pass:hover{
+	text-decoration: none;
+}
+.remove{
+	color: red;
+	font-weight: bold;
+	position: relative;
+	left: 10px;
+}
+.remove:hover{
+	color: red;
+	text-decoration: none;
+}

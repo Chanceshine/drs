@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>维修人员列表</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-table.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-export.min.js"></script>
+	<script type="text/javascript" src="../js/tableExport.js"></script>
+</head>
+<body>
+	<section id="regs">
+		<div id="toolbar">
+			<button id="remove" class="btn btn-danger" disabled>
+	            <i class="glyphicon glyphicon-remove"></i> Delete
+	        </button>
+            
+        </div>
+        <div id="out">
+        	<select class="form-control">
+                <option value="">导出当前表</option>
+                <option value="all">导出全部</option>
+                <option value="selected">导出被选项</option>
+            </select>
+        </div>
+		<table	id="table"
+	            data-toolbar="#toolbar"
+	            data-toggle="table"
+	            data-show-columns="true"
+	            data-search="true"
+	            data-show-refresh="true"
+	            data-show-toggle="true"
+	            data-show-export="true"
+	            data-detail-view="true"
+	            data-detail-formatter="detailFormatter"
+	            data-checkbox="true"
+	            data-id-field="id"
+	            data-undefined-text="暂无数据"
+	            data-pagination="true"
+	            data-height="500"
+	            data-sort-stable="true"
+	            data-pagination="true"
+	            data-page-size="8"
+	            data-select-item-name="checkbox"
+	            data-checkbox-header="true"
+	            data-url="../control/allRegs.php">
+			<thead>
+				<tr>
+					<th data-field="state" data-checkbox="true"></th>
+					<th data-field="id" data-sortable="true" data-width="50px">ID</th>
+					<th data-field="rid" data-sortable="true" data-width="120px">维修员ID</th>
+					<th data-field="rsex" data-width="100px">性别</th>
+					<th data-field="old" data-width="100px">年龄</th>
+					<th data-field="tel" data-width="150px">手机长号</th>
+					<th data-field="cornet" data-sortable="true" data-width="100px">短号</th>
+					<th data-field="rcompus" data-sortable="true" data-width="130px">所在校区</th>
+					<th data-field="functions" data-sortable="true" data-width="130px">职能</th>
+					<th data-field="entry" data-sortable="true" data-width="180px">入职时间</th>
+					<th data-field="operate" data-formatter="operateFormatter" 	data-events="operateEvents" data-width="150px">操作</th>
+				</tr>
+			</thead>
+		</table>
+	</section>
+</body>
+</html>

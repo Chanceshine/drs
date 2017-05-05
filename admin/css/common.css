@@ -1,0 +1,29 @@
+table{
+	table-layout:fixed;
+	background: #fff;
+}
+#unaudited a:hover{
+	text-decoration: none;
+}
+#unaudited {
+	margin:15px;
+}
+#unaudited .othertext{
+	text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#out{
+	width: 150px;
+}
+.remove{
+	color: red;
+	font-weight: bold;
+	position: relative;
+	left: 10px;
+}
+.remove:hover{
+	color: red;
+	text-decoration: none;
+}

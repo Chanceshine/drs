@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维修人员列表</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-table.css">
+	<link rel="stylesheet" type="text/css" href="../css/zeroModal.css">
+	<link rel="stylesheet" type="text/css" href="../css/formValidation.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/repairTable.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="../js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-zh-CN.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-table-export.min.js"></script>
+	<script type="text/javascript" src="../js/tableExport.js"></script>
+	<script type="text/javascript" src="../js/zeroModal.min.js"></script>
+	<script type="text/javascript" src="../js/formValidation.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body>
+<div id="edit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="gridSystemModalLabel">
+				<i class="glyphicon glyphicon-pencil"></i> 修改资料(只能修改以下条目)</h4>
+			</div>
+			<form id="changeDate" method="post" class="form-horizontal" action="../control/updateRepair.php">
+				<div class="modal-body">
+					<div class="form-group">
+	                    <label for="rid" class="col-sm-3 control-label">当前维修员编号</label>
+	                    <div class="col-sm-6">
+	                        <input id="rid" type="text" class="form-control" name="rid" readonly="readonly">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label for="compus" class="col-sm-3 control-label">所在校区</label>
+	                    <div class="col-sm-6">
+	                        <select id="compus" class="form-control" name="compus">
+	                        	<option value="">请选择校区</option>
+	                        	<option>松山湖校区</option>
+	                        	<option>莞城校区</option>
+	                        </select>
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label for="tel" class="col-sm-3 control-label">手机长号</label>
+	                    <div class="col-sm-6">
+	                        <input id="tel" type="text" class="form-control" name="tel" autocomplete="off">
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">短号</label>
+	                    <div class="col-sm-6">
+	                        <input id="cornet" type="cornet" class="form-control" name="cornet" placeholder="若无可不填" autocomplete="off">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">人员职能</label>
+	                    <div class="col-sm-6">
+	                        <textarea id="functions" class="form-control" name="functions"></textarea> 
+	                    </div>
+	                </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="submit" class="btn btn-primary">确认修改</button>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	<section id="repairMan">
+		<div id="toolbar">
+			<button id="remove" class="btn btn-danger" disabled>
+	            <i class="glyphicon glyphicon-remove"></i> Delete
+	        </button>            
+        </div>
+        <div id="out">
+        	<select class="form-control">
+                <option value="">导出当前表</option>
+                <option value="all">导出全部</option>
+                <option value="selected">导出被选项</option>
+            </select>
+        </div>
+		<table	id="table"
+	            data-toolbar="#toolbar"
+	            data-toggle="table"
+	            data-show-columns="true"
+	            data-search="true"
+	            data-show-refresh="true"
+	            data-show-toggle="true"
+	            data-show-export="true"
+	            data-detail-formatter="detailFormatter"
+	            data-checkbox="true"
+	            data-id-field="id"
+	            data-undefined-text="暂无数据"
+	            data-pagination="true"
+	            data-height="480"
+	            data-sort-stable="true"
+	            data-pagination="true"
+	            data-page-size="8"
+	            data-select-item-name="checkbox"
+	            data-checkbox-header="true"
+	            data-url="../control/allRepairman.php"
+	            data-cache="false">
+			<thead>
+				<tr>
+					<th data-field="state" data-checkbox="true"></th>
+					<th data-field="id" data-sortable="true" data-width="50px">ID</th>
+					<th data-field="rid" data-sortable="true" data-width="100px">维修员ID</th>
+					<th data-field="rname" data-width="100px">姓名</th>
+					<th data-field="rsex" data-sortable="true" data-width="80px">性别</th>	
+					<th data-field="rcompus" data-sortable="true" data-width="100px">所在校区</th>
+					<th data-field="tel" data-width="130px">手机长号</th>
+					<th data-field="cornet" data-width="100px">短号</th>
+					<th data-field="functions" class="othertext" data-width="150px">职能</th>
+					<th data-field="hiredate" class="othertext" data-sortable="true" data-width="110px">入职时间</th>
+					<th data-field="inputman" data-width="90px" data-sortable="true">录入人</th>
+					<th data-field="operate" data-formatter="operateFormatter" 	data-events="operateEvents" data-width="150px">操作</th>
+				</tr>
+			</thead>
+		</table>
+	</section>
+	<script type="text/javascript" src="../js/repairManTable.js"></script>
+</body>
+</html>

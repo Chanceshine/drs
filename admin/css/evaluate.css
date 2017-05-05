@@ -1,0 +1,19 @@
+#pagination-demo1{
+	display: table;
+	margin: 20px auto 20px auto;
+	background-color: #fff;
+}
+table{
+	table-layout: fixed;
+}
+.box{
+	margin: 15px;
+	padding-bottom: 20px;
+	background: #fff;
+}
+.text{
+	overflow:hidden;
+	width:100px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}

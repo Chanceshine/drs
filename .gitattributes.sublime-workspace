@@ -1,0 +1,929 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"fo",
+				"font"
+			],
+			[
+				"_err",
+				"_error〔function〕"
+			],
+			[
+				"isset",
+				"isset〔function〕"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"fl",
+				"fl-l\tfloat: left;"
+			],
+			[
+				"com",
+				"complain.css"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"listst",
+				"list-style"
+			],
+			[
+				"brder",
+				"border-width"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"borderc",
+				"border-color"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ad",
+				"adminTable.css"
+			],
+			[
+				"admin",
+				"adminTable.php"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"upda",
+				"updateAdmin.php\t(adminTable.php)"
+			],
+			[
+				"cla",
+				"class='fa\t(index.php)"
+			],
+			[
+				"req",
+				"req1\trequire_once …"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"else",
+				"else"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"re",
+				"reUser.php"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"ov",
+				"ovx\toverflow-x: ${1:hidden};"
+			],
+			[
+				"js",
+				"json_encode\t(repairingTable.php)"
+			],
+			[
+				"locla",
+				"localStorage\t: Storage Window"
+			],
+			[
+				"dat",
+				"data"
+			],
+			[
+				"if",
+				"ifelse\tif … else …"
+			],
+			[
+				"zeromo",
+				"zeroModal.css"
+			],
+			[
+				"eval",
+				"eval〔function〕"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"remo",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"ajax",
+				"ajax\t$.ajax()"
+			],
+			[
+				"fw",
+				"fw-lr\tfont-weight: lighter;"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"alert",
+				"alert\t( message?: DOMString ): void Window"
+			],
+			[
+				"te",
+				"test.js"
+			],
+			[
+				"cl",
+				"click〔function〕"
+			],
+			[
+				"oncl",
+				"onclick\t: EventHandler Window"
+			],
+			[
+				"l",
+				"length〔variable〕"
+			],
+			[
+				"ti",
+				"title\t(userEavluate.html)"
+			],
+			[
+				"my",
+				"myEvaluate.css"
+			],
+			[
+				"set",
+				"setTimeout\t( handler: any, timeout?: long, arguments_..: any ): long Window"
+			],
+			[
+				"hre",
+				"href=\"readMore.php?nid"
+			],
+			[
+				"sure",
+				"sureRepaired.php"
+			],
+			[
+				"panel-",
+				"panel-success\t bootstrap.min.css"
+			],
+			[
+				"p",
+				"pointer"
+			],
+			[
+				"now",
+				"nowitem\t(personCenter.php)"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"aja",
+				"ajax\t$.ajax()"
+			],
+			[
+				"is",
+				"isEvaluate.php"
+			],
+			[
+				"ech",
+				"echo\t(evaluate.php)"
+			],
+			[
+				"pos",
+				"pos\tposition: ${1:relative};"
+			],
+			[
+				"rea",
+				"relative"
+			],
+			[
+				"more",
+				"more.php"
+			],
+			[
+				"u",
+				"userevaluate.php"
+			],
+			[
+				"btn-",
+				"btn-lg\t bootstrap.min.css"
+			],
+			[
+				"form",
+				"form-control\t bootstrap.min.css"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"j",
+				"jquery.barrating.min.js"
+			],
+			[
+				"boot",
+				"bootstrap-stars.css"
+			],
+			[
+				"s",
+				"sureRepaired.php"
+			],
+			[
+				"class",
+				"class='row"
+			],
+			[
+				"typ",
+				"type〔variable〕"
+			],
+			[
+				"btn-d",
+				"btn-default\t bootstrap.min.css"
+			],
+			[
+				"btn-pr",
+				"btn-primary\t bootstrap.min.css"
+			],
+			[
+				"repair",
+				"repaired.js"
+			],
+			[
+				"curren",
+				"currentStatus"
+			],
+			[
+				"btn-p",
+				"btn-primary\t bootstrap.min.css"
+			],
+			[
+				"texa",
+				"text-align"
+			],
+			[
+				"con",
+				"container\t bootstrap.min.css"
+			],
+			[
+				"read",
+				"readMore.css"
+			],
+			[
+				"ca",
+				"caption\tTag"
+			],
+			[
+				"请选择",
+				"请选择校区\t(cascade.js)"
+			],
+			[
+				"change",
+				"changedata.js"
+			],
+			[
+				"_",
+				"_row〔variable〕"
+			],
+			[
+				"rep",
+				"repairing.php"
+			],
+			[
+				"va",
+				"values\t(rejectTable.js)"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"fun",
+				"function_without_name"
+			],
+			[
+				"pars",
+				"parseInt\t( s: string, radix: int ): int Global"
+			],
+			[
+				"del",
+				"delregs"
+			],
+			[
+				"array",
+				"array〔function〕"
+			],
+			[
+				"d",
+				"delReg.php"
+			],
+			[
+				"func",
+				"function_without_name"
+			],
+			[
+				"a",
+				"ajax〔function〕"
+			],
+			[
+				"repa",
+				"repairingTable.php"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"dis",
+				"distribute"
+			],
+			[
+				"par",
+				"parent〔function〕"
+			],
+			[
+				"btn",
+				"btn-primary\t(distribute.html)"
+			],
+			[
+				"functin",
+				"functions"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"state",
+				"statetime"
+			],
+			[
+				"reg",
+				"regtime\t(schedule.php)"
+			],
+			[
+				"row",
+				"row1"
+			],
+			[
+				"widh",
+				"width"
+			],
+			[
+				"texta",
+				"text-align"
+			],
+			[
+				"no",
+				"notice.php"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"notice",
+				"noticeList.html"
+			],
+			[
+				"pri",
+				"print_r〔function〕"
+			],
+			[
+				"arra",
+				"array〔keyword〕"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"n",
+				"noticeNitle.jpg\tw:1200 h:49"
+			],
+			[
+				"backg",
+				"background-attachment"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"oneN",
+				"oneNotice.css"
+			],
+			[
+				"se",
+				"section\t(record.php)"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"hi",
+				"height〔function〕"
+			],
+			[
+				"ta",
+				"target\t(index.php)"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"el",
+				"elseif\telseif …"
+			],
+			[
+				"current",
+				"currentStatus\t(regsTable.php)"
+			],
+			[
+				"sql",
+				"sqlgid"
+			],
+			[
+				"count",
+				"count〔function〕"
+			],
+			[
+				"cou",
+				"count〔function〕"
+			],
+			[
+				"edit",
+				"editTable"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rem",
+		"selected_items":
+		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: all",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/大四上/自学/Less/learn/style/index.less",
+		"/E/大四上/自学/Less/learn/style/test.less",
+		"/E/大四上/自学/Less/learn/style/test.css",
+		"/E/大四上/自学/Less/learn/test.html",
+		"/C/AppServ/www/Dormitory repair system/home/js/record.js",
+		"/C/AppServ/www/Dormitory repair system/home/control/checkSchedule.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/register.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/revoke.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/index.php",
+		"/C/AppServ/www/Dormitory repair system/home/css/style.css",
+		"/C/AppServ/www/Dormitory repair system/home/page/record.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/login.html",
+		"/C/AppServ/www/Dormitory repair system/home/control/newMsg.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/schedule.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/allappeal.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/revoke.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/lastReject.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/appeal.js",
+		"/C/AppServ/www/Dormitory repair system/admin/page/readMore.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/allReject.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/appealTable.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/distribute.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/repairing.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/repaired.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/rejectTable.html",
+		"/C/AppServ/www/Dormitory repair system/admin/js/rejectTable.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/allRegs.php",
+		"/C/AppServ/www/Dormitory repair system/admin/css/appeal.css",
+		"/C/AppServ/www/Dormitory repair system/home/control/appeal.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/home.js",
+		"/C/AppServ/www/Dormitory repair system/admin/page/home.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/regsTable.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/sureRepaired.php",
+		"/C/AppServ/www/Dormitory repair system/home/js/schedule.js",
+		"/C/AppServ/www/Dormitory repair system/home/page/noticeList.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/loginHandle.php",
+		"/C/AppServ/www/Dormitory repair system/home/css/complain.css",
+		"/C/AppServ/www/Dormitory repair system/home/page/mycomplain.php",
+		"/C/AppServ/www/Dormitory repair system/home/js/person.js",
+		"/C/AppServ/www/Dormitory repair system/home/page/myEvaluate.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/addRepair.html",
+		"/C/Users/zhong/AppData/Roaming/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/E/大四上/自学/Less/learn/index.html",
+		"/E/大四上/自学/Less/learn/style/index.css",
+		"/C/Users/zhong/AppData/Roaming/Sublime Text 3/Packages/LESS/README.md",
+		"/D/git/DormitoryRepairSystem/home/test.html",
+		"/C/AppServ/www/Dormitory repair system/admin/test.html",
+		"/D/git/DormitoryRepairSystem/home/test.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/rePassword.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/repairMan.html",
+		"/C/AppServ/www/Dormitory repair system/admin/control/passedTable.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/distributeRep.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/adminTable.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/admins.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/delAdmin.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/updateAdmin.php",
+		"/C/AppServ/www/Dormitory repair system/admin/css/adminTable.css",
+		"/C/AppServ/www/Dormitory repair system/admin/js/repairManTable.js",
+		"/C/AppServ/www/Dormitory repair system/admin/page/repairmanTable.html",
+		"/C/AppServ/www/Dormitory repair system/admin/control/admins.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/addAdmin.js",
+		"/C/AppServ/www/Dormitory repair system/admin/page/addAdmin.html",
+		"/C/AppServ/www/Dormitory repair system/admin/control/addAdmin.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/reUser.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/userComplain.html",
+		"/C/AppServ/www/Dormitory repair system/admin/page/userEavluate.html",
+		"/C/AppServ/www/Dormitory repair system/admin/css/evaluate.css",
+		"/C/AppServ/www/Dormitory repair system/admin/control/complain.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/reply.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/userComplain.js",
+		"/C/AppServ/www/Dormitory repair system/admin/js/userEvaluate.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/readReply.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/evaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/css/common.css",
+		"/C/AppServ/www/Dormitory repair system/admin/js/test.js",
+		"/C/AppServ/www/Dormitory repair system/home/page/more.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/personCenter.php",
+		"/C/AppServ/www/Dormitory repair system/home/js/evaluate.js",
+		"/C/AppServ/www/Dormitory repair system/home/page/nav.html",
+		"/C/AppServ/www/Dormitory repair system/home/page/evaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/sureRepaired.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/regs.js",
+		"/C/AppServ/www/Dormitory repair system/home/page/mycomplain.html",
+		"/C/AppServ/www/Dormitory repair system/home/control/complain.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/myEvaluate.html",
+		"/C/AppServ/www/Dormitory repair system/home/css/person.css",
+		"/C/AppServ/www/Dormitory repair system/home/control/evaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/changeData.html",
+		"/C/AppServ/www/Dormitory repair system/home/page/rePassword.html",
+		"/C/AppServ/www/Dormitory repair system/home/css/sidenav.css",
+		"/C/AppServ/www/Dormitory repair system/home/css/noticeList.css",
+		"/C/AppServ/www/Dormitory repair system/home/control/hasEvaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/readMore.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/readMore.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/userevaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/isEvaluate.php",
+		"/C/AppServ/www/Dormitory repair system/home/css/evaluate.css",
+		"/C/AppServ/www/Dormitory repair system/home/css/foot.css",
+		"/C/AppServ/www/Dormitory repair system/home/control/pass.php",
+		"/C/AppServ/www/Dormitory repair system/home/css/readMore.css",
+		"/C/AppServ/www/Dormitory repair system/home/page/more.html",
+		"/C/AppServ/www/Dormitory repair system/home/css/schedule.css",
+		"/C/AppServ/www/Dormitory repair system/home/css/jquery.eeyellow.Timeline.css",
+		"/C/AppServ/www/Dormitory repair system/admin/control/readMore.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/repairing.js",
+		"/C/AppServ/www/Dormitory repair system/admin/js/repaired.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/repairingTable.php",
+		"/C/AppServ/www/Dormitory repair system/admin/css/rejectTable.css",
+		"/C/AppServ/www/Dormitory repair system/admin/css/repairing.css",
+		"/C/AppServ/www/Dormitory repair system/admin/control/repaired.php",
+		"/C/AppServ/www/Dormitory repair system/home/common/db_connect.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/rePwd.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/surePwd.php",
+		"/C/AppServ/www/Dormitory repair system/home/js/changedata.js",
+		"/C/AppServ/www/Dormitory repair system/home/control/updateData.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/repair.php",
+		"/C/AppServ/www/Dormitory repair system/home/page/readMore.html",
+		"/C/AppServ/www/Dormitory repair system/home/css/record.css",
+		"/C/AppServ/www/Dormitory repair system/home/control/complete.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/repairing.php",
+		"/C/AppServ/www/Dormitory repair system/home/control/unaudited.php",
+		"/C/AppServ/www/Dormitory repair system/admin/page/unaudited.html",
+		"/C/AppServ/www/Dormitory repair system/admin/control/delReg.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/unaudited.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/reject.php",
+		"/C/AppServ/www/Dormitory repair system/admin/control/delPub.php",
+		"/C/AppServ/www/Dormitory repair system/admin/js/distribute.js",
+		"/C/AppServ/www/Dormitory repair system/admin/control/distributeMore.php"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ity",
+			"({\n",
+			"username",
+			"nav",
+			"}",
+			">\n",
+			"\"",
+			"<div class=\"col-md-6 pull-left\">\n                        <img class=\"events-object img-responsive img-rounded\" src=\"img/cat02.jpeg\" />\n                    </div>",
+			"'",
+			".\"",
+			"\".",
+			"php",
+			"'];\n",
+			"\"",
+			"'];\n",
+			"relative",
+			"absolute",
+			"'];\t\t\t\t\t",
+			"('');\n",
+			"loading1",
+			"url",
+			"img",
+			"}",
+			"{",
+			"tbody",
+			"POST",
+			"echo",
+			"\"",
+			"');\n",
+			"20px",
+			" $(",
+			"_row",
+			"defaultForm",
+			"html",
+			";\n",
+			"\"",
+			"targetOffset",
+			"targetOffset.left",
+			"targetOffset.left>windowWidth/2",
+			"targetOffset.left > windowWidth / 2",
+			".menu.menu--right",
+			"treeview",
+			"treeview-menu",
+			"background",
+			"htmleaf-container",
+			"htmleaf-header",
+			"text",
+			"htmleaf-header",
+			"heading",
+			"htmleaf-header",
+			"heading",
+			" <",
+			"login",
+			";\n",
+			"\n.",
+			"form_act",
+			"cont_join_form_act",
+			"border:none;",
+			"login_pass",
+			"login",
+			"url",
+			"');\n",
+			"prop",
+			";\n",
+			"post",
+			";\n",
+			");\n",
+			";\n",
+			"|$')));",
+			"font-size: 25px;\n\tcolor: #f00;\n\tbackground: #ccc;",
+			";\n",
+			");\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"\"",
+			";?>",
+			"<? echo ",
+			"'",
+			"",
+			"'",
+			"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": ".gitattributes.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

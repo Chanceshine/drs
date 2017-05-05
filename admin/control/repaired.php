@@ -1,0 +1,57 @@
+<?php
+	session_start();
+	header('Content-type:text/html;charset=utf-8');
+	require_once("../common/db_connect.php");
+
+	class Repaired{
+		private $_db;
+		private $_row;
+		private $_user;
+		public function __construct(){
+			$this->_db=new DB();
+		}
+		public function repair(){
+			if (isset($_SESSION['admin'])) {
+				$this->_user = $_SESSION['admin'];
+				$sql = "select level,jurisdiction from admin where user = '$this->_user'";
+				$row = $this->_db->oneRow($sql);
+
+				if ($row['level'] ==3) {
+					$query = "SELECT distinct * FROM regs,task where regs.nid=task.regid and regs.currentStatus=3 ";
+					$this->_row=$this->_db->moreRows($query);
+					for ($i=0; $i < count($this->_row); $i++) { 
+						if ($this->_row[$i]['currentStatus'] == 3) {
+							$this->_row[$i]['currentStatus'] = "已完成";
+						}
+					}
+					return $this->_row;
+				}else{
+					if ($row['jurisdiction']==0) {
+						$compus = "松山湖校区";
+					}else{
+						$compus = "莞城校区";
+					}
+					$query = "SELECT distinct a.id,nid,uid,regman,tel,compus,building,room,equipment,othertext,time,regtime,currentStatus,updateTime,operator,repairman FROM regs a,task b where a.nid=b.regid and a.compus ='".$compus."' and b.state = 3";
+					$this->_row=$this->_db->moreRows($query);
+
+					if (count($this->_row)!=0) {
+						for ($i=0; $i < count($this->_row); $i++) { 
+							if ($this->_row[$i]['currentStatus'] == 3) {
+								$this->_row[$i]['currentStatus'] = "已完成";
+							}
+						}
+						return $this->_row;
+					}else{
+						return 0;
+					}									
+				}				
+			}else{
+				echo "<script>window.location.href(../index.html)</script>";
+			}
+		}
+	}
+
+	$r=new Repaired();
+	$rows=$r ->repair();
+	echo json_encode($rows);
+?>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-table.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-table.js"></script>
+    <script type="text/javascript" src="bootstrap-table-master/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    
+    
+    <script src="js/tableExport.js"></script>
+</head>
+<body>
+    <div id="toolbar">
+            <select class="form-control">
+                <option value="">Export Basic</option>
+                <option value="all">Export All</option>
+                <option value="selected">Export Selected</option>
+            </select>
+        </div>
+	<table id="table"
+            data-toolbar="#toolbar"
+            data-toggle="table"
+            data-show-columns="true"
+            data-search="true"
+            data-show-refresh="true"
+            data-show-toggle="true"
+            data-show-export="true"
+            data-detail-view="true"
+            data-detail-formatter="detailFormatter"
+            data-checkbox="true"
+            data-id-field="id"
+            data-pagination="true"
+            data-height="500"
+            data-sort-stable="true"
+            data-pagination="true"
+            data-page-size="8"
+            data-select-item-name="checkbox"
+            data-checkbox-header="true">
+    <thead>
+        <tr>
+            <th data-field="state" data-checkbox="true"></th>
+            <th data-field="id">ID</th>
+            <th data-field="name">Item Name</th>
+            <th data-field="price" data-sortable="true">Item Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td data-field="name">1</td>
+            <td>Item 1</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td data-field="name">2</td>
+            <td>Item 2</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td data-field="name">3</td>
+            <td>Item 3</td>
+            <td>$3</td>
+        </tr>
+        <tr>
+        <td></td>
+            <td data-field="name">4</td>
+            <td>Item 4</td>
+            <td>$4</td>
+        </tr>
+        <tr>
+        <td></td>
+            <td data-field="name">1</td>
+            <td>Item 1</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+        <td></td>
+            <td data-field="name">2</td>
+            <td>Item 2</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+        <td></td>
+            <td data-field="name">3</td>
+            <td>Item 3</td>
+            <td>$3</td>
+        </tr>
+        
+    </tbody>
+</table>
+<script type="text/javascript">
+$(function () {
+    // var $table = $('#table'),
+    var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('destroy').bootstrapTable({
+                exportDataType: $(this).val()
+            });
+        });
+         $table.bootstrapTable('hideColumn', 'name');
+    })
+})
+    
+</script>
+</body>
+</html>

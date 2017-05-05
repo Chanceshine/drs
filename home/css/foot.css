@@ -1,0 +1,12 @@
+.footer{
+	height: 40px;
+	width: 100%;
+	float: left;
+	box-shadow: 0 -2px 5px #77c5fe;
+	position: absolute;
+	margin-bottom: 0;
+	background: -webkit-linear-gradient(120deg,#77c5fe, #fff,#31b0d5); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(120deg,#77c5fe, #fff,#31b0d5); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(120deg,#77c5fe, #fff,#31b0d5); /* Firefox 3.6 - 15 */
+	background: linear-gradient(120deg,#77c5fe, #fff,#31b0d5); /* 标准的语法 */ 
+}

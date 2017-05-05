@@ -1,0 +1,41 @@
+<!-- 导航按钮 -->
+<button id="mm-menu-toggle" class="mm-menu-toggle" title="导航菜单">Toggle Menu</button>
+<label id="navtip" for="mm-menu-toggle">菜单</label>
+<!-- 菜单 -->
+<nav id="mm-menu" class="mm-menu">
+	<div class="mm-menu__header">
+		<h2 class="mm-menu__title">用户自服务</h2>
+	</div>
+	<ul class="mm-menu__items">
+		<li class="mm-menu__item">
+			<a class="mm-menu__link li_header" href="personCenter.php">
+				<span class="mm-menu__link-text"><i class="glyphicon glyphicon-user"></i>用户中心</span>
+			</a>
+		</li>
+		<li class="mm-menu__item">
+			<a class="mm-menu__link myEvaluate" href="myEvaluate.php">
+				<span class="mm-menu__link-text"><i class="glyphicon glyphicon-heart"></i>我的评价</span>
+			</a>
+		</li>
+		<li class="mm-menu__item">
+			<a class="mm-menu__link mycomplain" href="mycomplain.php">
+				<span class="mm-menu__link-text"><i class="glyphicon glyphicon-remove-sign"></i>我的投诉</span>
+			</a>
+		</li>
+		<li class="mm-menu__item">
+			<a class="mm-menu__link data" href="#">
+				<span class="mm-menu__link-text"><i class="glyphicon glyphicon-pencil"></i>修改资料</span>
+			</a>
+		</li>
+		<li class="mm-menu__item">
+			<a class="mm-menu__link changePwd" href="#">
+				<span class="mm-menu__link-text"><i class="glyphicon glyphicon-eye-close"></i>更改密码</span>
+			</a>
+		</li>
+	</ul>
+</nav><!-- /nav -->
+<script>
+	$('[data-menu]').menu();	//个人中心下拉菜单
+
+	var menu = new Menu;
+</script>

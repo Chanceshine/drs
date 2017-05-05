@@ -1,0 +1,32 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+	background-color: #eee;
+	height: 100%;
+}
+.content{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+}
+.button{
+	width: 100%;
+	padding: 0 8%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.button .btn{
+	height: 50px;
+	font-size: 1.5em;
+}
+.post-title{
+	overflow:hidden;
+	width:300px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#more{
+	float: right;
+	margin: 10px;
+}

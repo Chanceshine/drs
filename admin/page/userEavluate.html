@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>用户评价</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/pagination.css">
+	<link rel="stylesheet" type="text/css" href="../css/zeroModal.css">
+	<link rel="stylesheet" type="text/css" href="../css/evaluate.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="../js/pagination.min.js"></script>
+	<script type="text/javascript" src="../js/zeroModal.min.js"></script>
+	<script type="text/javascript" src="../js/userEvaluate.js"></script>
+</head>
+<body>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">回复用户</h4>
+			</div>
+			<form>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="msgtext" class="control-label">回复内容:</label>
+						<textarea class="form-control" id="msgtext" placeholder="请输入您的留言，100字以内" required="required" maxlength="100"></textarea>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<button id="send" type="button" class="btn btn-primary">发送</button>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	<main>
+		<section>
+			<div class="box">
+				<div class="data-container">
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>报修单号</th>
+									<th>维修员评分</th>
+									<th>维修员评价</th>
+									<th>服务评分</th>
+									<th>服务评价</th>
+									<th>评价时间</th>
+									<th>回复人</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+				<div id="pagination-demo1"></div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+	background-color: #eee;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: #77c5fe;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-image: url(../img/title.jpg);
+}
+.header .logo{
+	width: 60px;
+	float: left;
+	margin-left: 15%;
+}
+.header .welcome a{
+	font-size: 2em;
+	letter-spacing: 5px;
+	color: #fff;
+	height: 45px;
+	line-height: 45px;
+}
+a:hover{
+	text-decoration: none;
+}
+.header .login{
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 5px;
+	float: right;
+	margin-right: 15%;
+}
+.header .user{
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 5px;
+	float: right;
+	margin-right: 20%;
+}
+.header .user a{
+	color: #fff;
+	margin-left: 2px;
+}
+.header .user a:hover{
+	text-decoration: none;
+}
+.header .login a{
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: #fff;
+	display: inline-block;
+	margin-left: 2px;
+	border:2px solid #eee;
+	border-radius: 5px;
+	padding: 0 5px 0px 5px;
+	text-decoration: none;
+}

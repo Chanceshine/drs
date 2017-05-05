@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<header><h1>宿舍报修系统</h1></header>
+		<div class="login">
+			<form action="../control/loginHandle.php" method="post" class="form-signin" role="form">
+				<div class="loginbox">
+					<div class="tip">
+						<p>请使用您的<strong>学工号</strong>作为用户名登录</p>
+						<p>初始密码为：123456</p>
+					</div>
+					<!-- 登录表单 -->
+					<div class="loginform">
+						<div class="input-group input_text">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+							<input type="text" id="uid" name="uid" class="form-control" placeholder="请输入您的用户名" required autofocus>
+						</div>
+						<div class="input-group input_text">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input type="password" id="pass" name="pwd" class="form-control" placeholder="请输入您的密码" required>
+						</div>
+					    <label class="remember">
+					      	<input class="remember_text" id="checkbox" checked="checked" type="checkbox">记住密码
+					    </label>
+					</div>
+				</div>
+				<button id="btn" name="btn" class="btn btn-lg btn-block loginbtn" type="submit">登录</button>
+			</form>
+
+		</div>
+	</div>
+
+</body>
+</html>
