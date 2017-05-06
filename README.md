@@ -1,8 +1,8 @@
 # Dormitory repair system
 基于WEB的宿舍报修系统
-<button>version 1.0</button>
+version 1.0
 
-## 项目技术(WAMP)
+## 项目技术(`WAMP`)
 * 前端：html+css+javascript,ajax,json,框架jQuery，Bootstrap
 * 后台：PHP
 * 数据库MySQL
