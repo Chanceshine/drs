@@ -9,13 +9,19 @@
 			$this->_db=new DB();
 		}
 		public function evaluate(){
-			$sql="select * from evaluate where rscore IS NOT null";
-			$this->_row =$this->_db->moreRows($sql);
-			
-			if ($this->_row ==null ) {
+			if (isset($_SESSION['uid'])) {
+				$this->uid = $_SESSION['uid'];
+
+				$sql="select * from evaluate where uid = '$this->uid' rscore IS NOT null";
+				$this->_row =$this->_db->moreRows($sql);
+				
+				if ($this->_row ==null ) {
+					return 0;
+				} else {
+					return $this->_row;
+				}
+			}else{
 				return 0;
-			} else {
-				return $this->_row;
 			}
 		}
 

@@ -16,7 +16,7 @@
 				$this->_user = $_SESSION['user'];
 				$this->_uid = $_SESSION['uid'];
 				//修改sql语句
-				$query = "SELECT * FROM regs where uid = '$this->_uid' and currentStatus=4 or currentStatus=6";
+				$query = "SELECT * FROM regs where (uid = '$this->_uid' and currentStatus=4) or uid = '$this->_uid' and currentStatus=6";
 
 				$this->_row=$this->_db->moreRows($query);
 

@@ -9,24 +9,29 @@
 			$this->_db=new DB();
 		}
 		public function complain(){
-			$sql="select * from evaluate where complain IS NOT null";
-			$this->_row =$this->_db->moreRows($sql);
-			for ($i=0; $i < count($this->_row); $i++) { 
-				if ($this->_row[$i]['reply'] == null) {
-					$this->_row[$i]['reply'] ="暂未收到回复";
+			if (isset($_SESSION['uid'])) {
+				$this->uid = $_SESSION['uid'];
+
+				$sql="select * from evaluate where uid='$this->uid' and complain IS NOT null";
+				$this->_row =$this->_db->moreRows($sql);
+				for ($i=0; $i < count($this->_row); $i++) { 
+					if ($this->_row[$i]['reply'] == null) {
+						$this->_row[$i]['reply'] ="暂未收到回复";
+					}
+					if ($this->_row[$i]['replytime'] == null) {
+						$this->_row[$i]['replytime'] ="暂无";
+					}
 				}
-				if ($this->_row[$i]['replytime'] == null) {
-					$this->_row[$i]['replytime'] ="暂无";
-				}				
-			}
-			
-			if ($this->_row ==null ) {
-				return 0;
+
+				if ($this->_row ==null ) {
+					return 0;
+				} else {
+					return $this->_row;
+				}			
 			} else {
-				return $this->_row;
+				return 0;
 			}
 		}
-
 	}
 	$r=new AllComplain();
 	$rows = $r->complain();

@@ -29,7 +29,9 @@
 					}else{
 						return $nid;
 					}
-				}							
+				}else{
+					return -1;
+				}						
 			}else{
 				return 0;		//未登录
 			}	

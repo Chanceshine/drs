@@ -25,14 +25,14 @@
 <body>
 <!--头部-->
 <?php include "header.php";?>
-
+<?php if ($rows[0]["id"]): ?>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="VivaTimeline">
                 <dl>
                     <dt>报修进度</dt>
-<?php if ($rows[0]["id"]): ?>
+
     <dd class="pos-left clearfix">
             <div class="circ"></div>
             <div class="time"><? echo $rows[0]["regtime"];?></div>
@@ -364,12 +364,14 @@
             </div>
         </dd>
     <?php endif ?>
+    <?php if ($rows[0]["id"]): ?>
                     <dt>最新进度到底啦！</dt>
                 </dl>
             </div>
         </div>
     </div>
     <div class="row seeMore">查看更多 <strong><a href="record.php" target="_blank">我的报修记录</a></strong></div>
+    <?php endif ?>
 <?php
     if ($rows[0]['id'] ==null) {
         echo "
