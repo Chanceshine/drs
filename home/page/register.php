@@ -78,7 +78,7 @@
 								</select>
 							</div>
 							<div class="text">
-								<label for="othertext"> 报修补充（必填,200个字符以内）</label>
+								<label for="othertext"><i>*</i> 故障描述（必填,200个字符以内）</label>
 								<textarea id="othertext" name="othertext" placeholder="例：电风扇开关损坏" class="form-control" required="required" maxlength="200"></textarea>
 								<span class="wordwrap"><var class="word">200</var>/200</span>	
 							</div>
