@@ -103,6 +103,8 @@ $(function () {
         $.post($form.attr('action'), $form.serialize(), function(result) {
         	if(result==0){
         		$('.error').html('您的用户名和密码不匹配');
+        	}else if (result==2) {
+        		$('.error').html('您已登录，请勿重复登录！');
         	}else {
         		var admin = $('#user').val();
         		var pwd = $('#pwd').val();
@@ -112,8 +114,8 @@ $(function () {
 				}else{
 					localStorage.removeItem('pwd');
 				}
-        	}
-    		window.location.href='page/home.php';
+				window.location.href='page/home.php';
+        	}    		
     	    console.log(result);
         },'json');
         $('#user').change(function () {
