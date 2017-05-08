@@ -17,7 +17,7 @@
 				$row = $this->_db->oneRow($sql);
 
 				if ($row['level'] ==2) {
-					$query = "SELECT a.id,nid,uid,regman,tel,compus,building,room,equipment,othertext,time,regtime,currentStatus,updateTime,operator,repairman FROM regs a,task b regs,task where a.nid=b.regid and b.state =a.currentStatus and b.state=2";
+					$query = "SELECT a.id,nid,uid,regman,tel,compus,building,room,equipment,othertext,time,regtime,currentStatus,updateTime,operator,repairman FROM regs a,task b where a.nid=b.regid and b.state =a.currentStatus and b.state=2";
 					$this->_row=$this->_db->moreRows($query);
 					for ($i=0; $i < count($this->_row); $i++) { 
 						if ($this->_row[$i]['currentStatus'] == 2) {

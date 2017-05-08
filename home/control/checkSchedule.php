@@ -8,6 +8,7 @@
 		private $_row;
 		private $_uid;
 		private $_regid;
+		private $_rid;
 		public function __construct(){
 			$this->_db=new DB();
 		}
@@ -17,6 +18,7 @@
 				//获取id，报修单id，报修设备，登记时间，预约时间
 				$sql="select id,nid,equipment,regtime,time from regs where uid = '$this->_uid'  ORDER BY updateTime DESC";
 				$row1 = $this->_db->oneRow($sql);
+				$this->_rid = $row1['repairman'];
 
 				date_default_timezone_set("PRC");
 				$row1['regtime'] = date('Y-m-d',strtotime($row1['regtime']));
@@ -33,10 +35,19 @@
 						$time = $row2[$i]['statetime'];
 						$row2[$i]['statetime'] = date('Y-m-d',strtotime($time));
 					}
+					//获得维修员姓名，联系方式，平均分
+					if (!empty($this->_rid)) {
+						$avgScore = "select avg(rscore) avgScore from evaluate where rid = '$this->_rid'";
+						$row3 =$this->_db->oneRow($avgScore);
+						$row3['avgScore'] = round($row3['avgScore'],2);
+						$repairman = "select rname,tel,cornet from repairman where rid = '$this->_rid'";
+						$row4 =$this->_db->oneRow($repairman);
+					}
+
 					$readed = "update regs set isread = 0 where uid = '$this->_uid'";
 					$this->_db->otherHandleRow($readed);
 
-					$rows = array($row1,$row2);
+					$rows = array($row1,$row2,$row3,$row4);
 					return $rows;
 				}			
 			}				
