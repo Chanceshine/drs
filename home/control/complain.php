@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	header('Content-type:text/html;charset=utf-8');
 	require_once("../common/db_connect.php");
 

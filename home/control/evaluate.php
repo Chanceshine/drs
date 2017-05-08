@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	header('Content-type:text/html;charset=utf-8');
 	require_once("../common/db_connect.php");
 
@@ -12,7 +13,7 @@
 			if (isset($_SESSION['uid'])) {
 				$this->uid = $_SESSION['uid'];
 
-				$sql="select * from evaluate where uid = '$this->uid' rscore IS NOT null";
+				$sql="select * from evaluate where uid = '$this->uid' and rscore IS NOT null";
 				$this->_row =$this->_db->moreRows($sql);
 				
 				if ($this->_row ==null ) {
