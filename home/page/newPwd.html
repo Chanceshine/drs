@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>修改密码</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/formValidation.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<style type="text/css">
+form{
+	padding: 80px;
+	color: #666;
+	font-size: 18px;
+}
+</style>
+<body>
+	<div class="container">
+        <section>
+            <div class="col-lg-12">
+                <form id="defaultForm" method="post" class="form-horizontal" action="../control/findPwd.php">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">新密码</label>
+                        <div class="col-lg-5">
+                            <input type="password" class="form-control" name="password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">确认新密码</label>
+                        <div class="col-lg-5">
+                            <input type="password" class="form-control" name="confirmPassword">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-9 col-lg-offset-3">
+                            <button type="submit" id="btn" class="btn btn-primary" name="btn">确认修改</button>
+                        </div>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                    	密码修改成功
+                    </div>
+                </form>
+        	</div>
+        </section>
+	</div>
+
+<script type="text/javascript">
+	$('.alert').hide();	//隐藏提示框
+
+  	$(document).ready(function() {
+	    $('#defaultForm').formValidation({
+	        message: 'This value is not valid',
+	        icon: {
+	            valid: 'glyphicon glyphicon-ok',
+	            invalid: 'glyphicon glyphicon-remove',
+	            validating: 'glyphicon glyphicon-refresh'
+	        },
+	        fields: {
+	            oldPwd: {
+	                validators: {
+	                    notEmpty: {
+	                        message: '请输入旧密码'
+	                    },
+	                    remote: {
+	                        type: 'POST',
+	                        url: '../control/surePwd.php',
+	                        message: '旧密码错误',
+	                    }
+	                }
+	            },
+	            password: {
+	                validators: {
+	                    notEmpty: {
+	                        message: '新密码不能为空'
+	                    },
+	                    different: {
+	                        field: 'oldPwd',
+	                        message: '新密码不能跟旧密码一致'
+	                    },
+	                    stringLength: {
+				    		min: 6,
+				    		max: 12,
+				    		message: '密码字符长度在6-12之间'
+				    	},
+	                }
+	            },
+	            confirmPassword: {
+	                validators: {
+	                    notEmpty: {
+	                        message: '确认密码不能为空'
+	                    },
+	                    identical: {
+	                        field: 'password',
+	                        message: '两次输入的密码不一致'
+	                    }
+	                }
+	            },
+	        }
+	    }).on('success.form.fv', function(e) {
+            // Prevent form submission
+            e.preventDefault();
+            // Get the form instance
+            var $form = $(e.target);
+            // Get the FormValidation instance
+            var bv = $form.data('formValidation');
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(msg) {
+            	alert(msg);
+            	if (msg==0) {
+            		$('.alert').html('密码找回链接超时，请重新获取！');
+            	}
+            	$('.alert').show();	
+                console.log(msg);
+            },'json');
+        });
+	});
+</script>
+</body>
+</html>
