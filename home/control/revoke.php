@@ -16,7 +16,7 @@
 				$this->_user = $_SESSION['user'];
 				$this->_uid = $_SESSION['uid'];
 				//修改sql语句
-				$query = "SELECT * FROM regs where (uid = '$this->_uid' and currentStatus=4) or uid = '$this->_uid' and currentStatus=6";
+				$query = "SELECT a.id,nid,uid,regman,tel,compus,area,building,room,equipment,othertext,time,regtime,currentStatus,updateTime,reason FROM regs a,task b where a.nid=b.regid and (a.uid = '$this->_uid' and a.currentStatus = 4 and b.state=4) or (a.uid = '$this->_uid' and a.currentStatus = 6 and b.state=6)";
 
 				$this->_row=$this->_db->moreRows($query);
 
@@ -33,11 +33,10 @@
 					return 0;
 				}
 			}else{
-				echo "<script>window.location.href(../index.html)</script>";
+				return 0;
 			}
 		}
 	}
-
 	$r=new RevokeTable();
 	$rows=$r ->revoke();
 	echo json_encode($rows);

@@ -19,7 +19,7 @@
 				$this->_regid = $_POST['nid'];
 				
 				//任务表插入新状态（审核通过）
-				$sqlstatus = "insert into task(regid,operator,state) values('$this->_regid','$this->_user',1)";
+				$sqlstatus = "insert into task(regid,operator,state) values('$this->_regid','$this->_gid',1)";
 				$this->_row=$this->_db->otherHandleRow($sqlstatus);
 				//修改登记表的状态
 				$sqlupdate = "update regs set currentStatus = 1,isread = 1 where nid = '$this->_regid'";
